@@ -13,7 +13,6 @@
     require('connect.php');
     $query = $db->query('SELECT * from users');
     $results = $query->fetchAll();
-    print_r($results);
     foreach ($results as $row) {
         echo "ID: " . $row['id'] . "<br>";
         echo "Nom: " . $row['name'] . "<br>";
